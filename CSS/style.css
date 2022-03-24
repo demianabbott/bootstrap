@@ -42,20 +42,23 @@ body {
 
 .table {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
+
 
 /*Section "El Negocio"*/
 .section__elnegocio .related-post {
     background-color: gray;
     padding: 10px;
     color: white;
-    height: 120px;
+    height: 100px;
     border-radius: 15px;
     margin: 20px ;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
+    
     
 }
 .section__elnegocio .related-post:hover {
@@ -64,6 +67,28 @@ body {
     background: rgb(56, 182, 52);
     box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
 }
+
+.parrafo__elnegocio {
+    animation-duration: 3s;
+    animation-name: slidein;
+    color: black;
+    padding: 20px;
+    font-weight: 400;
+    font-size: large;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 
 /*Página "Galería"*/
 
@@ -82,6 +107,7 @@ body {
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
+
 
 /*Pàgina "Nosotros"*/
 
